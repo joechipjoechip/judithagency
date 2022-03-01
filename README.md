@@ -1,4 +1,5 @@
-# Node version : 13.14.0
+## Node version : 14.18.0
+
 
 # 🚀 Getting started with Strapi
 
