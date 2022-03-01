@@ -1,0 +1,30 @@
+{
+  "name": "Judith API",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.1.1",
+    "@strapi/plugin-users-permissions": "4.1.1",
+    "@strapi/plugin-i18n": "4.1.1",
+    "sqlite3": "5.0.2"
+  },
+  "author": {
+    "name": "Lionel O"
+  },
+  "strapi": {
+    "uuid": "57babcdb-b7db-4f4c-98ff-8772174198fe"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
