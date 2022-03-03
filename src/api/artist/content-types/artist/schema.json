@@ -4,7 +4,8 @@
   "info": {
     "singularName": "artist",
     "pluralName": "artists",
-    "displayName": "artist"
+    "displayName": "artist",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -51,19 +52,28 @@
       "type": "string"
     },
     "realisations": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       }
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }
