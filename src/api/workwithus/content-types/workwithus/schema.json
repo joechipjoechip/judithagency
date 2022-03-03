@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "work_with_uses",
+  "collectionName": "workwithuses",
   "info": {
-    "singularName": "work-with-us",
-    "pluralName": "work-with-uses",
-    "displayName": "work-with-us"
+    "singularName": "workwithus",
+    "pluralName": "workwithuses",
+    "displayName": "Workwithus"
   },
   "options": {
     "draftAndPublish": true
@@ -15,16 +15,7 @@
     }
   },
   "attributes": {
-    "key": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "section": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
