@@ -4,7 +4,8 @@
   "info": {
     "singularName": "manifesto",
     "pluralName": "manifestos",
-    "displayName": "manifesto"
+    "displayName": "manifesto-main",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

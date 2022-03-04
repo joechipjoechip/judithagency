@@ -35,9 +35,13 @@
       "required": true
     },
     "description": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::description.description"
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
     }
   }
 }
