@@ -4,7 +4,8 @@
   "info": {
     "singularName": "workwithus",
     "pluralName": "workwithuses",
-    "displayName": "Workwithus"
+    "displayName": "Workwithus",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -34,13 +35,9 @@
       "required": true
     },
     "description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text",
-      "required": true
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::description.description"
     }
   }
 }
