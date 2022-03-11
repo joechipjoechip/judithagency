@@ -138,6 +138,17 @@
         }
       },
       "type": "text"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0
     }
   }
 }
