@@ -50,7 +50,7 @@
 	import wording from "@/assets/data/wording.js";
 	import Cards   from "@/components/cards";
 	import TeamListing from "@/components/team-listing";
-	import ArrowUp from "@/assets/svg/arrowUp.svg";
+	import ArrowUp from "@/assets/svg/arrowUp-triangle.svg";
 
 	import allArtistsQuery from "~/apollo/queries/artist/artists"
 	import allEthicMainsQuery from "~/apollo/queries/ethicmain/ethicmains"
