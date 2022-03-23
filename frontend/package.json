@@ -18,9 +18,7 @@
     "nuxt": "^2.15.7",
     "nuxt-svg-loader": "^1.2.0",
     "pg-connection-string": "^2.5.0",
-    "vue2-touch-events": "^3.2.2"
-  },
-  "devDependencies": {
+    "vue2-touch-events": "^3.2.2",
     "sass": "^1.45.1",
     "sass-loader": "^10.2.0"
   },
