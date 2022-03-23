@@ -10,7 +10,6 @@ export default {
   //   host: '0.0.0.0', // default: localhost   
   // },
 
-
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
