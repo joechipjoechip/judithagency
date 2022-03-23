@@ -7,8 +7,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "heroku-postbuild": "cd frontend && npm install --legacy-peer-deps && npm run build"
+    "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.1.2",
