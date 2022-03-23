@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "heroku-postbuild": "cd frontend && npm install --legacy-peer-deps && npm run build"
+    "heroku-postbuild": "cd frontend && npm install --force && npm run build"
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.1.2",
@@ -26,7 +26,7 @@
     "uuid": "57babcdb-b7db-4f4c-98ff-8772174198fe"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": "14.18.0",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
