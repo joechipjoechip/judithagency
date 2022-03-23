@@ -3,7 +3,6 @@ export default {
   env: {
     STRAPI_BASE_URL: process.env.STRAPI_BASE_URL || "http://localhost:1337"
   },
-  
 
   // to inspect with real device throught local network
   // server: {     
