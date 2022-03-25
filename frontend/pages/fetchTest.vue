@@ -14,25 +14,25 @@
 		},
 		watch: {
 
-			articles( newVal ){
+			// articles( newVal ){
 
-				console.log("watch articles : ", newVal);
+			// 	console.log("watch articles : ", newVal);
 
-			}
+			// }
 
 		},
 		created(){
 
-			this.goFetch();
+			// this.goFetch();
 
 		},
 		methods: {
 
 			async goFetch(){
 
-				const res = await fetch('http://localhost:1337/homepage')
+				// const res = await fetch('http://localhost:1337/homepage')
 
-				this.articles = await res.json();		
+				// this.articles = await res.json();		
 
 			}
 		}
