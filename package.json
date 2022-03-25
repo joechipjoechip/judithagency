@@ -8,8 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "startall": "cd frontend && npm run start && cd .. && npm run start",
-    "heroku-postbuild": "cd frontend && npm install --force && npm run generate && cd .. && npm run startall"
+    "heroku-postbuild": "cd frontend && npm install --force && npm run generate && cd .. && npm run start"
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.1.2",
