@@ -59,20 +59,20 @@ export default {
   apollo: {  
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+        httpEndpoint: `${process.env.STRAPI_BASE_URL}/graphql` || "http://localhost:1337/graphql"
       },
       
       alternativeClient: {
         // required
-        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql",
+        httpEndpoint: `${process.env.STRAPI_BASE_URL}/graphql` || "http://localhost:1337/graphql",
 
         // // override HTTP endpoint in browser only
         // browserHttpEndpoint: '/graphql',
 
         // See https://www.apollographql.com/docs/link/links/http.html#options
-        httpLinkOptions: {
-          credentials: 'same-origin'
-        },
+        // httpLinkOptions: {
+        //   credentials: 'same-origin'
+        // },
       }
     },
 

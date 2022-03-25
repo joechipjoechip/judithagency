@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"STRAPI_BASE_URL":"http://localhost:1337"}
+      env: {"STRAPI_BASE_URL":"https://judithagency.herokuapp.com"}
     }
     // Only set once
 

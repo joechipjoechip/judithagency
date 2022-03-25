@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _037e116f = () => interopDefault(import('../pages/cases.vue' /* webpackChunkName: "pages/cases" */))
-const _277d9218 = () => interopDefault(import('../pages/fetchTest.vue' /* webpackChunkName: "pages/fetchTest" */))
-const _fb02823e = () => interopDefault(import('../pages/team.vue' /* webpackChunkName: "pages/team" */))
-const _be68e666 = () => interopDefault(import('../pages/work-with-us.vue' /* webpackChunkName: "pages/work-with-us" */))
-const _ab5e2104 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _a3730e74 = () => interopDefault(import('../pages/cases.vue' /* webpackChunkName: "pages/cases" */))
+const _42f71422 = () => interopDefault(import('../pages/fetchTest.vue' /* webpackChunkName: "pages/fetchTest" */))
+const _45f090aa = () => interopDefault(import('../pages/team.vue' /* webpackChunkName: "pages/team" */))
+const _a8d0f4d4 = () => interopDefault(import('../pages/work-with-us.vue' /* webpackChunkName: "pages/work-with-us" */))
+const _551956d5 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -23,23 +23,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/cases",
-    component: _037e116f,
+    component: _a3730e74,
     name: "cases"
   }, {
     path: "/fetchTest",
-    component: _277d9218,
+    component: _42f71422,
     name: "fetchTest"
   }, {
     path: "/team",
-    component: _fb02823e,
+    component: _45f090aa,
     name: "team"
   }, {
     path: "/work-with-us",
-    component: _be68e666,
+    component: _a8d0f4d4,
     name: "work-with-us"
   }, {
     path: "/",
-    component: _ab5e2104,
+    component: _551956d5,
     name: "index"
   }],
 

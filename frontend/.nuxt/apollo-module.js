@@ -27,7 +27,7 @@ export default (ctx, inject) => {
       let defaultClientConfig
 
         defaultClientConfig = {
-  "httpEndpoint": "http://localhost:1337/graphql"
+  "httpEndpoint": "https://judithagency.herokuapp.com/graphql"
 }
 
       const defaultValidateToken = () => true
@@ -85,10 +85,7 @@ export default (ctx, inject) => {
       let alternativeClientClientConfig
 
         alternativeClientClientConfig = {
-  "httpEndpoint": "http://localhost:1337/graphql",
-  "httpLinkOptions": {
-    "credentials": "same-origin"
-  }
+  "httpEndpoint": "https://judithagency.herokuapp.com/graphql"
 }
 
       const alternativeClientValidateToken = () => true

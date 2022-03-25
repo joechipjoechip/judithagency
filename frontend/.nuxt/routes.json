@@ -2,36 +2,31 @@
   {
     "name": "cases",
     "path": "/cases",
-    "component": "/Users/joechip/Desktop/mesRepos/strapi-learn/frontend/pages/cases.vue",
-    "chunkName": "pages/cases",
-    "_name": "_037e116f"
+    "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/cases.vue",
+    "chunkName": "pages/cases"
   },
   {
     "name": "fetchTest",
     "path": "/fetchTest",
-    "component": "/Users/joechip/Desktop/mesRepos/strapi-learn/frontend/pages/fetchTest.vue",
-    "chunkName": "pages/fetchTest",
-    "_name": "_277d9218"
+    "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/fetchTest.vue",
+    "chunkName": "pages/fetchTest"
   },
   {
     "name": "team",
     "path": "/team",
-    "component": "/Users/joechip/Desktop/mesRepos/strapi-learn/frontend/pages/team.vue",
-    "chunkName": "pages/team",
-    "_name": "_fb02823e"
+    "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/team.vue",
+    "chunkName": "pages/team"
   },
   {
     "name": "work-with-us",
     "path": "/work-with-us",
-    "component": "/Users/joechip/Desktop/mesRepos/strapi-learn/frontend/pages/work-with-us.vue",
-    "chunkName": "pages/work-with-us",
-    "_name": "_be68e666"
+    "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/work-with-us.vue",
+    "chunkName": "pages/work-with-us"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/joechip/Desktop/mesRepos/strapi-learn/frontend/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_ab5e2104"
+    "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]

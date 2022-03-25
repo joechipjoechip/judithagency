@@ -13,8 +13,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_0b113b6c from 'nuxt_plugin_plugin_0b113b6c' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_apollomodule_a798cfa8 from 'nuxt_plugin_apollomodule_a798cfa8' // Source: ./apollo-module.js (mode: 'all')
+import nuxt_plugin_plugin_5997ce93 from 'nuxt_plugin_plugin_5997ce93' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_apollomodule_9200de16 from 'nuxt_plugin_apollomodule_9200de16' // Source: ./apollo-module.js (mode: 'all')
 import nuxt_plugin_vue2touchevents_147d6945 from 'nuxt_plugin_vue2touchevents_147d6945' // Source: ../plugins/vue2-touch-events.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -217,12 +217,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_0b113b6c === 'function') {
-    await nuxt_plugin_plugin_0b113b6c(app.context, inject)
+  if (typeof nuxt_plugin_plugin_5997ce93 === 'function') {
+    await nuxt_plugin_plugin_5997ce93(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_apollomodule_a798cfa8 === 'function') {
-    await nuxt_plugin_apollomodule_a798cfa8(app.context, inject)
+  if (typeof nuxt_plugin_apollomodule_9200de16 === 'function') {
+    await nuxt_plugin_apollomodule_9200de16(app.context, inject)
   }
 
   if (typeof nuxt_plugin_vue2touchevents_147d6945 === 'function') {

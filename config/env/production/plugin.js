@@ -20,7 +20,7 @@ module.exports = ({ env }) => ({
 				secretAccessKey: env('AWSSecretKey'),
 				region: env('AWSRegion'),
 				params: {
-					Bucket: "judithagency-uploads",
+					Bucket: env("AWSBucketName"),
 				},
 			},
 		},
