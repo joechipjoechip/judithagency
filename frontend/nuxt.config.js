@@ -5,6 +5,11 @@ export default {
     FALLBACK_IMAGE_URL: `${process.env.UPLOADS_BASE_URL}/test_Big_Pic_8e33de7b4b.png`
   },
 
+  generate: {
+    subFolders: false,
+    dir: "../public/"
+  },
+
   // to inspect with real device throught local network
   // server: {     
   //   port: 8000, // default: 3000     
