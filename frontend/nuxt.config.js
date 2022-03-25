@@ -47,14 +47,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/strapi'],
-
-  strapi: {
-    url: process.env.STRAPI_BASE_URL,
-    prefix: '/api',
-    version: 'v4',
-    cookie: {},
-  },
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
