@@ -9,13 +9,13 @@
 			<img  
 				v-if="infosArtist.profilePic.data"
 				class="artist-image-content" 
-				:src="`${$store.state.variables.STRAPI_BASE_URL}${infosArtist.profilePic.data.attributes.url}`" 
+				:src="infosArtist.profilePic.data.attributes.url" 
 				:alt="infosArtist.surname"
 			>
 			<!-- fallback -->
 			<img v-else
 				class="artist-image-content" 
-				:src="`${$store.state.variables.STRAPI_BASE_URL}/uploads/avatar_default_13d8a892e6.png`" 
+				:src="`${$store.state.variables.FALLBACK_IMAGE_URL}`" 
 				alt=""
 			>
 

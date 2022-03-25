@@ -3,30 +3,35 @@
     "name": "cases",
     "path": "/cases",
     "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/cases.vue",
-    "chunkName": "pages/cases"
+    "chunkName": "pages/cases",
+    "_name": "_a3730e74"
   },
   {
     "name": "fetchTest",
     "path": "/fetchTest",
     "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/fetchTest.vue",
-    "chunkName": "pages/fetchTest"
+    "chunkName": "pages/fetchTest",
+    "_name": "_42f71422"
   },
   {
     "name": "team",
     "path": "/team",
     "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/team.vue",
-    "chunkName": "pages/team"
+    "chunkName": "pages/team",
+    "_name": "_45f090aa"
   },
   {
     "name": "work-with-us",
     "path": "/work-with-us",
     "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/work-with-us.vue",
-    "chunkName": "pages/work-with-us"
+    "chunkName": "pages/work-with-us",
+    "_name": "_a8d0f4d4"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/joechip/Desktop/mesRepos/judithagency/frontend/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_551956d5"
   }
 ]

@@ -6,12 +6,14 @@ const headerHeightPrimary = 150;
 const headerHeightSecondary = 90;
 
 const STRAPI_BASE_URL = process.env.STRAPI_BASE_URL;
+const FALLBACK_IMAGE_URL = process.env.FALLBACK_IMAGE_URL;
 
 export const state = () => ({
 	mqMobile,
 	mqDesktop,
 	mqDesktopLarge,
 	STRAPI_BASE_URL,
+	FALLBACK_IMAGE_URL,
 	isMobile: false,
 	isMobileNavOpen: false,
 	headerHeight: headerHeightPrimary

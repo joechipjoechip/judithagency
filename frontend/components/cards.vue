@@ -14,13 +14,13 @@
 				<img 
 					v-if="artist.attributes.profilePic.data"
 					class="card-image" 
-					:src="`${$store.state.variables.STRAPI_BASE_URL}${artist.attributes.profilePic.data.attributes.url}`" 
+					:src="artist.attributes.profilePic.data.attributes.url" 
 					:alt="artist.attributes.name"
 				>
 				<!-- fallback -->
 				<img v-else
 					class="card-image" 
-					:src="`${$store.state.variables.STRAPI_BASE_URL}/uploads/avatar_default_13d8a892e6.png`" 
+					:src="$store.state.variables.FALLBACK_IMAGE_URL"
 					alt=""
 				>
 
@@ -48,7 +48,11 @@
 			required: true
 		},
 
+		mounted(){
 
+			console.log("hey cards : ", this.$store.state.variables );
+
+		},
 	
 		methods: {
 			clickOnArtist(event) {

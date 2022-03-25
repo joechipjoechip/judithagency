@@ -1,7 +1,8 @@
 export default {
 
   env: {
-    STRAPI_BASE_URL: process.env.STRAPI_BASE_URL || "http://localhost:1337"
+    STRAPI_BASE_URL: "https://judithagency.herokuapp.com" || "http://localhost:1337",
+    FALLBACK_IMAGE_URL: "https://judithagency-uploads.s3.eu-west-3.amazonaws.com/test_Big_Pic_8e33de7b4b.png"
   },
 
   // to inspect with real device throught local network
