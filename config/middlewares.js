@@ -9,4 +9,18 @@ module.exports = [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  {
+    "name": 'strapi::security',
+    "config": {
+      "contentSecurityPolicy": {
+        "useDefaults": true,
+        "directives": {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': ["'self'", 'data:', 'blob:', `${process.env.AWSBucketName}.s3.${process.env.AWSRegion}.amazonaws.com`],
+          'media-src': ["'self'", 'data:', 'blob:', `${process.env.AWSBucketName}.s3.${process.env.AWSRegion}.amazonaws.com`],
+          "upgradeInsecureRequests": null,
+        }
+      }
+    }
+  },
 ];
