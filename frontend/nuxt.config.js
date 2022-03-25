@@ -1,7 +1,7 @@
 export default {
 
   env: {
-    STRAPI_BASE_URL: process.env.STRAPI_BASE_URL || "http://localhost:1337",
+    STRAPI_BASE_URL: process.env.STRAPI_BASE_URL,
     FALLBACK_IMAGE_URL: `${process.env.UPLOADS_BASE_URL}/test_Big_Pic_8e33de7b4b.png`
   },
 
