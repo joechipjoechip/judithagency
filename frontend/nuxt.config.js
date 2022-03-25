@@ -47,8 +47,14 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: ['@nuxtjs/strapi'],
+  
+  strapi: {
+    url: process.env.STRAPI_BASE_URL,
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+  }
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -60,12 +66,12 @@ export default {
   apollo: {  
     clientConfigs: {
       default: {
-        httpEndpoint: `${process.env.STRAPI_BASE_URL}/graphql` || "http://localhost:1337/graphql"
+        httpEndpoint: `${process.env.STRAPI_BASE_URL}/graphql`
       },
       
       alternativeClient: {
         // required
-        httpEndpoint: `${process.env.STRAPI_BASE_URL}/graphql` || "http://localhost:1337/graphql",
+        httpEndpoint: `${process.env.STRAPI_BASE_URL}/graphql`,
 
         // // override HTTP endpoint in browser only
         // browserHttpEndpoint: '/graphql',
