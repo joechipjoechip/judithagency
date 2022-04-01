@@ -82,7 +82,9 @@ nbproject
 public/*
 !public/uploads/.gitkeep
 frontend/node_modules
+backend/node_modules
 frontend/dist
+frontend/.nuxt
 
 ############################
 # Node.js
