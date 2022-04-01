@@ -10,10 +10,14 @@ export default {
   //   port: 8000, // default: 3000     
   //   host: '0.0.0.0', // default: localhost   
   // },
+  generate: {
+    subFolders: false,
+    dir: "../public/"
+  },
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-  
+
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
