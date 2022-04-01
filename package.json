@@ -1,5 +1,5 @@
 {
-  "name": "judith-api",
+  "name": "judithtest",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -7,8 +7,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "heroku-postbuild": "cd frontend && npm install --force && npm run generate && cd .. && npm run start"
+    "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.1.2",
