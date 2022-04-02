@@ -4,16 +4,18 @@
 	"version": "0.1.0",
 	"description": "back and front",
 	"scripts": {
-	  "build": "cd backend && npm install && npm run build && cd ../frontend && npm install --legacy-peer-deps && npm run generate",
-	  "start": "cd backend && npm run start"
+		"build": "cd backend && npm install && npm run build && cd ../frontend && npm install --legacy-peer-deps && npm run generate",
+		"start": "cd backend && npm run start"
 	},
 	"author": {
-	  "name": "Lionel O"
+		"name": "Lionel O"
 	},
 	"engines": {
-	  "node": "14.18.0",
-	  "npm": ">=6.0.0"
+		"node": "14.18.0",
+		"npm": ">=6.0.0"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.17.3"
+	}
 }
-  

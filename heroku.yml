@@ -1,0 +1,5 @@
+build
+  web: npm run build
+run
+  worker: node index.js
+  web: npm run start
