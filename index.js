@@ -1,5 +1,7 @@
 var express = require('express');
 
+console.log("node express started");
+
 const app = express();
 
 app.use(express.static(__dirname + '/public'));
