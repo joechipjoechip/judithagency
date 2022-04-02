@@ -1,5 +1,6 @@
 build:
-  web: npm run build
+  web: npm run build-frontend
+  worker: npm run build-backend
 run:
-  web: node index.js
-  worker: npm run startbackend
+  web: npm run start
+  worker: npm run start-backend
