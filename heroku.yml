@@ -2,5 +2,5 @@ build:
   web: npm run build-frontend
   worker: npm run build-backend
 run:
-  web: npm run start
-  worker: npm run start-backend
+  web: npm run start-express
+  worker: npm run start
