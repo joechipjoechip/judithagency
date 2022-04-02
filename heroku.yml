@@ -1,5 +1,5 @@
-build
+build:
   web: npm run build
-run
+run:
   web: node index.js
   worker: npm run startbackend
