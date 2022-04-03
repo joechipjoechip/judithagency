@@ -10,27 +10,27 @@
 			<source 
 				v-if="content.large"
 				:media="$store.state.variables.mqDesktopLarge" 
-				:srcset="`${$store.state.variables.STRAPI_BASE_URL}${content.large.url}`"
+				:srcset="content.large.url"
 			>
 
 			<!-- med res -->
 			<source 
 				v-if="content.medium"
 				:media="$store.state.variables.mqDesktop" 
-				:srcset="`${$store.state.variables.STRAPI_BASE_URL}${content.medium.url}`"
+				:srcset="content.medium.url"
 			>
 
 			<!-- low res -->
 			<source 
 				v-if="content.small"
 				:media="$store.state.variables.mqDesktop" 
-				:srcset="`${$store.state.variables.STRAPI_BASE_URL}${content.small.url}`"
+				:srcset="content.small.url"
 			>
 
 			<!-- base -->
 			<img
 				v-if="content.thumbnail"
-				:src="`${$store.state.variables.STRAPI_BASE_URL}${content.thumbnail.url}`"
+				:src="content.thumbnail.url"
 				alt="illustration picture"
 			>
 
@@ -41,7 +41,7 @@
 		>
 
 			<video playsinline muted autoplay loop
-				:src="`${$store.state.variables.STRAPI_BASE_URL}${content.thumbnail.url}`"
+				:src="content.thumbnail.url"
 			></video>
 
 		</div>
