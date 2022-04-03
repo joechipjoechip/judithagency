@@ -42,7 +42,7 @@
 
 								<div v-if="notion === currentKey"
 									class="description">
-									{{ entries.find(entry => entry.attributes.title === currentKey).attributes.description }}
+									{{ entries.find(entry => entry.attributes.title.toLowerCase() === currentKey).attributes.description }}
 								</div>
 
 							</transition>
