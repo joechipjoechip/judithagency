@@ -4,9 +4,8 @@
 	"version": "0.1.0",
 	"description": "back and front",
 	"scripts": {
-		"build": "cd backend && npm install && npm run build && cd ../frontend && npm install --legacy-peer-deps && npm run generate",
-		"start": "cd backend && npm run start",
-		"start-express": "node index.js"
+		"build": "cd backend && npm install && npm run build",
+		"start": "cd backend && npm run start"
 	},
 	"author": {
 		"name": "Lionel O"
