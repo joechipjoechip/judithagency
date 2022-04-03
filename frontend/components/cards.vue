@@ -11,12 +11,16 @@
 				class="card"
 			>
 			
-				<img 
+				<media-handler 
 					v-if="artist.attributes.profilePic.data"
 					class="card-image" 
-					:src="artist.attributes.profilePic.data.attributes.url" 
-					:alt="artist.attributes.name"
-				>
+					:content="artist.attributes.profilePic.data.attributes.formats || {
+						thumbnail: {
+							url: artist.attributes.profilePic.data.attributes.url,
+							ext: artist.attributes.profilePic.data.attributes.ext
+						}
+					}" 
+				/>
 				<!-- fallback -->
 				<img v-else
 					class="card-image" 
@@ -34,10 +38,16 @@
 
 <script>
 
+	import MediaHandler from "@/components/micro/media-handler.vue";
+
 	
 
 	export default {
 		layout:'mainLayout',
+
+		components: {
+			"media-handler": MediaHandler
+		},
 
 		mounted() {
 			console.log('cards artist = ',this.artists)
