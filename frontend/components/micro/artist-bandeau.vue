@@ -6,12 +6,22 @@
 
 		<div class="artist-image-container">
 
-			<img  
+			<!-- <img  
 				v-if="infosArtist.profilePic.data"
 				class="artist-image-content" 
 				:src="infosArtist.profilePic.data.attributes.url" 
 				:alt="infosArtist.surname"
-			>
+			> -->
+			<media-handler 
+				v-if="infosArtist.profilePic.data"
+				class="card-image" 
+				:content="infosArtist.profilePic.data.attributes.formats || {
+					thumbnail: {
+						url: infosArtist.profilePic.data.attributes.url,
+						ext: infosArtist.profilePic.data.attributes.ext
+					}
+				}" 
+			/>
 			<!-- fallback -->
 			<img v-else
 				class="artist-image-content" 
@@ -54,7 +64,15 @@
 </template>
 
 <script>
+
+	import	MediaHandler from "@/components/micro/media-handler.vue";
+
 	export default {
+
+		components: {
+			"media-handler": MediaHandler
+		},
+
 		props: {
 			infosArtist: {
 				type: Object,
