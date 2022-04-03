@@ -1,3 +1,0 @@
-run:
-  web: npm run start-express
-  worker: npm run start
