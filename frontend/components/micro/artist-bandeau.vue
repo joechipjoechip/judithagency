@@ -6,12 +6,6 @@
 
 		<div class="artist-image-container">
 
-			<!-- <img  
-				v-if="infosArtist.profilePic.data"
-				class="artist-image-content" 
-				:src="infosArtist.profilePic.data.attributes.url" 
-				:alt="infosArtist.surname"
-			> -->
 			<media-handler 
 				v-if="infosArtist.profilePic.data"
 				class="card-image" 
