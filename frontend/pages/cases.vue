@@ -99,7 +99,11 @@
 
 
 						// 2 -- Descriptions parsing --
-						item.attributes.descriptionsParsed =  item.attributes.description.split(new RegExp("\n\n"));
+						if( item.attributes?.description ){
+
+							item.attributes.descriptionsParsed =  item.attributes.description.split(new RegExp("\n\n"));
+
+						}
 
 					});
 

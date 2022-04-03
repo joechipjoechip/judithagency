@@ -30,7 +30,7 @@
 		/> 
 
 		<manifesto
-			v-if="manifesto"
+			v-if="manifestoParsed"
 			class="margined-component"
 			ref="manifesto"
 			:content="manifestoParsed.data"
@@ -107,7 +107,7 @@
 
 			manifestoParsed() {
 
-				if(this.manifesto.data) {
+				if(this.manifesto?.data) {
 
 					// on vérifie que la data est brute (qu'elle arrive directement d'apollo)
 					if( typeof this.manifesto.data.attributes.textFirst === "string" ){
