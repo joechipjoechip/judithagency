@@ -39,6 +39,13 @@
 				letter-spacing: 4.8px;
 				color: var(--color-white);
 				text-transform: capitalize;
+				
+				@media #{$mobile} {
+					font-size: 32px;
+					font-weight: normal;
+					line-height: 40px;
+				}
+
 			}
 
 		}

@@ -18,6 +18,33 @@
 
 			<div v-else class="work-wrapper-inner only-desktop">
 
+				<div class="work-section-container">
+
+					<ul class="work-section-list">
+
+						<li v-for="(item, index, id) in workWithUsesParsed" :key="id"
+							:class="[
+								'work-section-item',
+								{'item-active': currentKey === item.attributes.key}
+							]"
+							:data-key="item.attributes.key"
+							@click.stop="sectionClickHandler"
+						>
+
+							<h3 class="section-title font-section-title">
+
+								<span v-for="(word, index, id) in item.attributes.title.split(' ')" :key="id">
+									{{ word }}
+								</span>
+
+							</h3>
+
+						</li>
+
+					</ul>
+
+				</div> 
+
 				<div class="work-description-wrapper">
 
 					<span class="work-description-wrapper-border"></span>
@@ -63,33 +90,6 @@
 					</div>
 
 				</div>
-
-				<div class="work-section-container">
-
-					<ul class="work-section-list">
-
-						<li v-for="(item, index, id) in workWithUsesParsed" :key="id"
-							:class="[
-								'work-section-item',
-								{'item-active': currentKey === item.attributes.key}
-							]"
-							:data-key="item.attributes.key"
-							@click.stop="sectionClickHandler"
-						>
-
-							<h3 class="section-title font-section-title">
-
-								<span v-for="(word, index, id) in item.attributes.title.split(' ')" :key="id">
-									{{ word }}
-								</span>
-
-							</h3>
-
-						</li>
-
-					</ul>
-
-				</div> 
 
 			</div>
 
@@ -242,6 +242,7 @@
 				position: relative;
 				width: calc(100% - $sideWidth);
 				color: var(--color-white);
+				margin-top: 40px;
 
 				&-border {
 					display: block;
@@ -261,32 +262,37 @@
 				flex-flow: column nowrap;
 				justify-content: center;
 				align-items: center;
-
 			}
 
 			&-subtitle {
 
 				&-container {
 					position: absolute;
-					// max-width: 200px;
-					padding-right: calc(100% - 200px);
-					left: 0;
 					top: 0;
-	
+					left: 0;
 					height: 135px;
 
+					width: 100%;
+					text-align: center;
+
+					display: flex;
+					flex-flow: column nowrap;
+					justify-content: center;
+					align-items: center;
 				}
 
-				&-content {
-
-				}
 			}
 
 			&-text {
 				position: absolute;
-				top: 233px;
-				max-width: 400px;
-				left: calc(50% - 200px);
+				top: 230px;
+				width: 80%;
+				left: 10%;
+
+				p {
+					font-size: 30px;
+					line-height: 38px;
+				}
 
 			}
 
@@ -314,6 +320,8 @@
 
 				opacity: .4;
 
+				will-change: opacity;
+
 				transition: opacity $animDuration;
 
 				&::before {
@@ -322,7 +330,7 @@
 					position: absolute;
 					display: block;
 					top: calc(50% - 12.5px);
-					right: 0;
+					left: 0;
 					width: 25px;
 					height: 25px;
 
@@ -344,18 +352,18 @@
 					display: block;
 					bottom: 0;
 					width: 100%;
-					max-width: 260px;
+					// max-width: 260px;
 					height: 1px;
 					background-color: var(--color-white);
 
 					transition: background-color $animDuration;
 				}
 
-				&:first-of-type {
-					> * {
-						margin-top: 0;
-					}
-				}
+				// &:first-of-type {
+				// 	> * {
+				// 		margin-top: 0;;
+				// 	}
+				// }
 
 				&:last-of-type {
 					> * {
@@ -396,6 +404,7 @@
 				}
 
 				.section-title {
+					margin-left: 60px;
 
 					span {
 						display: block;
