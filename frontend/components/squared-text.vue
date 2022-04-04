@@ -9,6 +9,7 @@
 		<div 
 			v-if="notions"
 			class="philosophy-wrapper"
+			v-view="viewHandler"
 		>
 
 			<div class="philosophy-inner">
@@ -144,6 +145,16 @@
 		},
 
 		methods: {
+
+			viewHandler( event ){
+
+				if( this.currentKey ===	 ""  && event.percentInView >= 1 ){
+
+					this.currentKey = this.notions[0];
+
+				}
+				
+			},
 
 			letterEventHandler( event ){
 
