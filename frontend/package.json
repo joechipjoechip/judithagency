@@ -20,6 +20,7 @@
     "pg-connection-string": "^2.5.0",
     "sass": "^1.45.1",
     "sass-loader": "^10.2.0",
+    "vue-check-view": "^0.3.0",
     "vue2-touch-events": "^3.2.2"
   },
   "engines": {
