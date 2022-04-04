@@ -138,7 +138,7 @@
 
 			onMouseWheelHandler(){
 
-				console.log("mouseWheelHandler !");
+				// console.log("mouseWheelHandler !");
 
 				const { top, bottom } = this.$refs.folio?.$el.getBoundingClientRect();
 
