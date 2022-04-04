@@ -6,7 +6,7 @@
 
 			<div class="case-viewer-cross" @click="handleCloseClick">
 
-				<cross  />
+				<cross />
 
 			</div>
 
@@ -252,6 +252,7 @@
 	.case-viewer {
 
 		&-cross {
+			z-index: 99;
 			position: fixed;
 			margin-top: 0 !important;
 			right: 2.5%;
