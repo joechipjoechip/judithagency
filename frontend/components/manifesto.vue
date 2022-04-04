@@ -115,8 +115,8 @@
 						> * {
 							text-align: center;
 							font-family: "PresicavRg";
-							font-size: 42px;
-							line-height: 50px;
+							font-size: 32px;
+							line-height: 40px;
 							margin-bottom: 80px;
 
 							@media #{$mobile} {
@@ -133,8 +133,6 @@
 					
 					&-2 {
 						font-family: "PresicavXl";
-						width: 80%;
-						margin: 0 auto;
 					}
 
 					&-square {
