@@ -92,6 +92,7 @@
 			display: inline-block;
 			width: 100%;
 			margin-top: 35px;
+			height: unset;
 		}
 
 		.artist-image-container {
@@ -190,7 +191,8 @@
 		.artist-identity-body {
 
 			@media #{$mobile} {
-				margin-top:10px;	
+				margin-top: 30px;	
+				margin-bottom: 30px;
 			}
 
 			.information {

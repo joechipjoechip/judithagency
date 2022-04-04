@@ -52,6 +52,7 @@ export default {
 		display:flex;
 		flex-direction: column;
 		padding-bottom: 90px;
+		
 		@media #{$mobile} {
 			margin-bottom: -100px;
 		}
