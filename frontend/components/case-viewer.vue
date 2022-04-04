@@ -340,7 +340,7 @@
 
 					@media #{$mobile} {
 						width: 100%;
-						font-size: 44px;
+						font-size: 33px;
 						width: calc(100% - 2.5% - 50px);
 						word-break: break-word;
 					}
