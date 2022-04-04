@@ -82,21 +82,21 @@
 				justify-content: center;
 				align-items: center;
 				
-				width: 15vw;
-				height: 15vw;
-				margin: 30vw;
+				width: min(10vw, 250px);
+				height: min(10vw, 250px);
+				margin: min(30vw, 600px);
 	
 				border: solid $borderSize var(--color-primary);
 
 				@media #{$mobile} {
-					margin: 200px;
-					max-width: 100px;
-					max-height: 100px;
+					margin: 150px;
+					width: 70px;
+					height: 70px;
 				}
 
 				&-text {
 					position: absolute;
-					width: 70vw;
+					width: min(70vw, 1000px);
 
 					display: flex;
 					justify-content: space-between;
@@ -107,12 +107,16 @@
 
 					// -35vw refers to the half of the 70vw of with
 					// -0.5vw refers to the font-size
-					transform: translate(calc(-0.5vw - 35vw + 50%), calc(-0.5vw + 50%)) rotate(-45deg);
+					transform: translate(
+							calc(-0.5vw - min(35vw, 500px) + 50%), 
+							calc(-0.5vw + 50%)
+						) 
+						rotate(-45deg);
 
 					color: var(--color-white);
 					font-family: "PresicavRg";
 					font-weight: bold;
-					font-size: $fontSize;
+					font-size: min($fontSize, 40px);
 					letter-spacing: 124px;
 
 					@media #{$mobile} {
