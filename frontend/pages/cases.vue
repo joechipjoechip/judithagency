@@ -68,7 +68,7 @@
 					this.cases.data.forEach(item => {
 
 						// gérer le cas de la string vide :
-						if( item.attributes.extraInfos.length === 0 ){
+						if( item.attributes.extraInfos?.length === 0 ){
 
 							item.attributes.extraInfos = [];
 
@@ -83,7 +83,7 @@
 						
 						// 1 -- ExtraInfos parsing --
 						// on check si on a bien une string à parser
-						if( typeof item.attributes.extraInfos === "string" ){
+						if( item.attributes.extraInfos && typeof item.attributes.extraInfos === "string" ){
 
 							item.attributes.extraInfos = item.attributes.extraInfos
 									// ["LABEL _ INFO"]
